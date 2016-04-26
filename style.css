@@ -1,0 +1,264 @@
+.centertitle {position: relative;  top:-4px; left: 322px;}
+
+.title{font-size:380%; font-variant:small-caps; font-weight:bold; font-family:"Times New Roman", Times, serif;}
+
+.title::first-letter {font-size: 150%;}
+
+/* unvisited link */
+a:link {color: white;}
+
+/* visited link */
+a:visited {color: white;}
+
+/* mouse over link */
+a:hover {color: #00ff00;}
+
+/* selected link */
+a:active {color: yellow;}
+
+.noButtonsCurrently{color:white;}
+
+.ButtonSize{
+  width: 152px;
+  height: 39px;
+  line-height: 35px;
+  background-image: url(https://a808b260df4813bc800f00df9eeaad349cf5872f.googledrive.com/host/0B9DXzVBr30sfTXNKN3JIN3ppRjA/Buttons/TransparentButton.png);
+  background-color: #e6e6e6;
+  font-size: 15px;
+  background-size: 152px 43px;
+  background-repeat: no-repeat;
+  text-align:left; 
+  display: table-cell;
+  padding-top: 2%;
+}
+
+.ButtonSize2{
+  width: 152px;
+  height: 39px;
+  line-height: 35px;
+  background-image: url(https://a808b260df4813bc800f00df9eeaad349cf5872f.googledrive.com/host/0B9DXzVBr30sfTXNKN3JIN3ppRjA/Buttons/TransparentButton.png);
+  background-color: #CC0000;
+  font-size: 15px;
+  background-size: 152px 43px;
+  background-repeat: no-repeat; 
+  text-align:left;
+  display: table-cell;
+  padding-top: 2%;
+}
+
+.BigButtonSize{
+  width: 152px;
+  height: 44px;
+  background-image: url(https://a808b260df4813bc800f00df9eeaad349cf5872f.googledrive.com/host/0B9DXzVBr30sfTXNKN3JIN3ppRjA/Buttons/TransparentButton.png);
+  background-color: #85d495;
+  font-family:Arial,Helvetica,sans-serif;
+  font-weight:100;
+  font-size: 30px;
+  background-size: 152px 55px;
+  background-repeat: no-repeat; 
+  text-align:left;
+  display: table-cell;
+  vertical-align: top;
+  padding-top: 6.5%;
+}
+
+.BigButtonSize:hover{background-color: #00ff00;}
+
+.BigButtonSize2{
+  width: 152px;
+  height: 44px;
+  background-image: url(https://a808b260df4813bc800f00df9eeaad349cf5872f.googledrive.com/host/0B9DXzVBr30sfTXNKN3JIN3ppRjA/Buttons/TransparentButton.png);
+  background-color: #00ff00;
+  font-family:Arial,Helvetica,sans-serif;
+  font-weight:100;
+  font-size: 30px;
+  padding-left:0px;
+  background-size: 152px 55px;
+  background-repeat: no-repeat; 
+  text-align:left;
+  display: table-cell;
+  vertical-align: top;
+  padding-top: 6.5%;
+}
+
+p.space {margin: -5px 0;}
+p.biggerspace {margin: 5px 0;}
+a.small {line-height:180%; z-index:5;}
+
+.crop {
+    width: 140px;
+    height: 78.75px;
+    overflow: hidden;
+
+    position: relative; left: 0px; top: 0px;
+
+    margin: 4px 0;
+
+    border-width:5px; border-style: solid;
+
+}
+
+.crop img {
+    width: 140px;
+
+    position: absolute; top: 0; left: 0;
+    clip:rect(0px,140px,78.75px,0px);
+
+}
+/* .mycontainer is used for the slide pictures */
+.mycontainer {
+	position:relative;
+}
+
+.mycontainer img {
+	position: absolute;
+	left: 0px;
+	top: 28px;
+	z-index: 1;
+	clip:rect(0px,700px,500px,0px);
+}
+
+.mycontainer2 {
+	position:relative;
+	width: 700px;
+}
+
+.mycontainer2 img {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 2;
+	height: 393px;
+}
+
+td.tablecolor {background-color: #629C70;}
+
+body {background-color: #4b6261; overflow: hidden;}
+
+p.top {font-size:220%; line-height:105%; margin:0em; text-align: center;}
+p.middle {font-size:150%; font-style: italic; margin:0em; text-align: center;}
+
+.centerTextinBox {position:absolute; top:484px; width:700px; background-color: #000000; background: rgba(21, 21, 21, 0.5); z-index:3;}
+.centerTextinBox2 {position:absolute; top:620px; right:0; left:0; margin:auto; width:694px; background-color: #000000; background: rgba(21, 21, 21, 0.5); z-index:20;}
+
+.topBottomFrame {background-color: #181818;}
+
+/* #323232 #629C70 */
+
+a.italicize {font-style:italic; font-weight: bold; font-size: 140%;}
+a.size {font-size: 140%; }
+p.IndentAndSize {font-size: 130%; line-height: 40%; } 
+p.IndentSizeBold {font-size: 180%; font-weight: bold; line-height: 5%;}
+p.buttonIndent {font-size: 180%; font-weight: bold; line-height: 5%;}
+p.space {line-height: -10%;}
+
+table.textbox {width: 700px;}
+td.red {background-color: #EB1C13; color:white; width:380px;}
+td.green {background-color: green; color:white}
+td.greyblue {background-color: #4b6261; width:380px;}
+
+.btnStyle1 {font-size: 250%;}
+
+.nextLine {position:relative; left:2px; clear: both;}
+.square {height:37px; width:52px;}
+.square:hover {box-sizing:border-box; border-style:solid; border-color:#00ff00; border-width:5px;}
+.colorRectangleBlock {padding: 2px; position:relative; left: 0px; top:35px; float:left;}
+.colorRectangleBlockTitle {padding: 2px; position:relative; left: -3px; top:35px; float:left;}
+.colorRectangleBlockButtonText {padding: 2px; position:relative; left: 241px; top:35px; float:left;}
+.colorRectangleBlockInside {padding: 2px; position:relative; left: 487px; top:35px; float:left;}
+
+.colorsettingsbox {
+    position:absolute;
+    left:-12px;
+    top:162px; 
+    border: 2px solid #000000;
+    padding: 10px 10px; 
+    background: #dddddd;
+    width: 676px;
+    height: 322px;
+    font-size:80%;   
+}
+
+.tabFront {
+    position:absolute;
+    left:-12px;
+    top:114px; 
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-top: 2px solid #000000;
+    padding: 0px 0px; 
+    background: #dddddd;
+    width: 125px;
+    height: 48px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-size:140%;
+    text-align:top;
+}
+
+.tabBehind {
+    position:absolute;
+    left:-12px;
+    top:114px;
+    border: 2px solid #000000;
+    padding: 0px 0px; 
+    background: grey;
+    width: 125px;
+    height: 46px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-size:140%;
+    text-align:top;
+}
+
+.tabBehind:hover {background:#00ff00}
+
+.closebox {
+    position:absolute;
+    left:-12px;
+    top:114px;
+    border: 2px solid #000000;
+    padding: 7px 0px; 
+    background: #EB9999;
+    width: 46px;
+    height: 32px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-size:220%;
+    font-weight:bold;
+    text-align:center;
+    font-family:Arial,Helvetica,sans-serif;
+    color:white;
+}
+
+.closebox:hover {background:#E60000}
+
+.inside {background-color:#181818}
+
+/* To position all of the big images in the center, adjust .mycontainer img top, code.js function BigFunction top, code.js mycode top, index.html closevideo top */
+/* BigFunction adjusts the YouTube Pictures in the center. */
+/* Immediately below is the big rectangular block in the center to color the inside. */
+
+.textinmiddle {height:80px; display: table-cell; vertical-align: middle;}
+.transparentfilmheight {height:82px;}
+
+/* This immediate below is used to center the entire table vertically and horizontally */
+#myTable {vertical-align: middle; margin-left:auto; margin-right:auto;}
+body {text-align:center;}
+
+.leftcolumn1 {position: relative; top: 0; left: -10px;}
+.leftcolumn2 {position: absolute; top: 0; left: 11px;}
+.rightcolumn1 {position: relative; left: 11px; top: -5px;}
+.rightcolumn2 {position: absolute; top: 0px; left: -11px; width:171px; height:89px;}
+.BigButtonPosition {position: relative; left: -10px; top: -5px; padding: 4px;}
+.ButtonPosition {position: relative; left:-10px; top: -3px; padding: 1.5px; color: #000000;}
+@supports (-ms-accelerator:true) {
+.leftcolumn1 {position: relative; top: 0; left: 0px;}
+.leftcolumn2 {position: absolute; top: 0; left: 0;}
+.rightcolumn1 {position: relative; left: 22px; top: -5px;}
+.rightcolumn2 {position: absolute; top: 0px; left: -22px; width:171px; height:89px;}
+.BigButtonPosition {position: relative; left: -5px; top: -5px; padding: 4px;}
+.ButtonPosition {position: relative; left: -3px; top: -3px; padding: 1.5px; color: #000000;}
+.centerTextinBox {position:absolute; top:480px; width:700px; background-color: #000000; background: rgba(21, 21, 21, 0.5); z-index:3;}
+.centertitle {position: relative;  top:-4px; left: 294px;}
+}
