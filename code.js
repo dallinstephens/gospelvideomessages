@@ -106,7 +106,7 @@ function myFunction(x) {
 	var text = "";
     for (var i = 0; i < NumberOfVideos; i++) {
 
-	text += '<div class="rightcolumn1">' + '<div class = "crop"><a><img src="' + preVideoURL[i] + video[i] + postSmallVideoURL[i] + '" alt="" /></a></div>' + '<a onmouseover="ClosePreviousPlayPauseNext2(); BigFunction(2,'+x+'); document.getElementById(PlayButton['+i+']).src=\'/buttons/GreenPlayButton.png\';' + 'document.getElementById(\'Big\').src=\'' + preVideoURL[i] + video[i] + postVideoURL[i] + '\';' + 'document.getElementById(\'ChangeText\').innerHTML = Explain['+i+']"' + 'onmouseout="BigFunction(1,'+x+'); document.getElementById(PlayButton['+i+']).src=\'/buttons/TransparentImage.png\';' + 'document.getElementById(\'Big\').src=\'/buttons/TransparentImage.png\';' + 'document.getElementById(\'ChangeText\').innerHTML = \'\'">' + '<img onclick = "n=1; myFunctionB(); myFunction2B(); myFunction3B(); detectTouchMouse(number['+i+']);" id="' + PlayButton[i] + '" src="/buttons/TransparentImage.png" class="rightcolumn2" alt="" border="0" /></a></div>';
+	text += '<div class="rightcolumn1">' + '<div class = "crop"><a><img src="' + preVideoURL[i] + video[i] + postSmallVideoURL[i] + '" alt="" /></a></div>' + '<a onmouseover="ClosePreviousPlayPauseNext2(); BigFunction(2,'+x+'); document.getElementById(PlayButton['+i+']).src=\'./buttons/GreenPlayButton.png\';' + 'document.getElementById(\'Big\').src=\'' + preVideoURL[i] + video[i] + postVideoURL[i] + '\';' + 'document.getElementById(\'ChangeText\').innerHTML = Explain['+i+']"' + 'onmouseout="BigFunction(1,'+x+'); document.getElementById(PlayButton['+i+']).src=\'./buttons/TransparentImage.png\';' + 'document.getElementById(\'Big\').src=\'./buttons/TransparentImage.png\';' + 'document.getElementById(\'ChangeText\').innerHTML = \'\'">' + '<img onclick = "n=1; myFunctionB(); myFunction2B(); myFunction3B(); detectTouchMouse(number['+i+']);" id="' + PlayButton[i] + '" src="./buttons/TransparentImage.png" class="rightcolumn2" alt="" border="0" /></a></div>';
 
     }
 
@@ -121,7 +121,7 @@ function myFunctionB() {
 	var text = "";
     for (var i = 0; i < NumberOfVideos; i++) {
 
-	text += '<div class="rightcolumn1">' + '<div class = "crop"><a><img src="' + preVideoURL[i] + video[i] + postSmallVideoURL[i] + '" alt="" /></a></div>' + '<a onmouseover="ClosePreviousPlayPauseNext2(); document.getElementById(PlayButton['+i+']).src=\'/buttons/GreenPlayButton.png\';' + 'document.getElementById(\'borderForCenterTextinBox2\').style = \'border-style: solid; border-color: #000000; border-width: 3px\';' + 'document.getElementById(\'ChangeText2\').innerHTML = Explain['+i+']"' + 'onmouseout="document.getElementById(PlayButton['+i+']).src=\'/buttons/TransparentImage.png\';' + 'document.getElementById(\'borderForCenterTextinBox2\').style = \'\';' + 'document.getElementById(\'ChangeText2\').innerHTML = \'\'">' + '<img onclick = "n=1; detectTouchMouse(number['+i+']);" id="' + PlayButton[i] + '" src="/buttons/TransparentImage.png" class="rightcolumn2" alt="" border="0" /></a></div>';
+	text += '<div class="rightcolumn1">' + '<div class = "crop"><a><img src="' + preVideoURL[i] + video[i] + postSmallVideoURL[i] + '" alt="" /></a></div>' + '<a onmouseover="ClosePreviousPlayPauseNext2(); document.getElementById(PlayButton['+i+']).src=\'./buttons/GreenPlayButton.png\';' + 'document.getElementById(\'borderForCenterTextinBox2\').style = \'border-style: solid; border-color: #000000; border-width: 3px\';' + 'document.getElementById(\'ChangeText2\').innerHTML = Explain['+i+']"' + 'onmouseout="document.getElementById(PlayButton['+i+']).src=\'./buttons/TransparentImage.png\';' + 'document.getElementById(\'borderForCenterTextinBox2\').style = \'\';' + 'document.getElementById(\'ChangeText2\').innerHTML = \'\'">' + '<img onclick = "n=1; detectTouchMouse(number['+i+']);" id="' + PlayButton[i] + '" src="./buttons/TransparentImage.png" class="rightcolumn2" alt="" border="0" /></a></div>';
 
     }
 
@@ -133,7 +133,7 @@ function myFunction2(x) {
         var text = new Array();	
     for (var i = 0; i < NumberOfVideos; i++) {
 
-    text[i] = '<div class="leftcolumn1">' + '<div class = "crop"><a><img src="' + preVideoURL2[i] + video2[i] + postSmallVideoURL2[i] + '" alt="" width="140" border="0" /></a></div>' + '<a onmouseover="ClosePreviousPlayPauseNext2(); BigFunction(2,'+x+'); document.getElementById(Play['+i+']).src=\'/buttons/GreenPlayButton2.png\';' + 'document.getElementById(\'Big\').src=\'' + preVideoURL2[i] + video2[i] + postVideoURL2[i] + '\';' + 'document.getElementById(\'ChangeText\').innerHTML = Explain2['+i+']"' + 'onmouseout="BigFunction(1,'+x+'); document.getElementById(Play['+i+']).src=\'/buttons/TransparentImage.png\';' + 'document.getElementById(\'Big\').src=\'/buttons/TransparentImage.png\';' + 'document.getElementById(\'ChangeText\').innerHTML = \'\'">' + '<img onclick = "n=1; myFunctionB(); myFunction2B(); myFunction3B(); detectTouchMouse(number2['+i+']);" class="leftcolumn2" id="' + Play[i] + '" src="/buttons/TransparentImage.png" alt="" width = "171" height = "89" border="0" /></a></div>'; 
+    text[i] = '<div class="leftcolumn1">' + '<div class = "crop"><a><img src="' + preVideoURL2[i] + video2[i] + postSmallVideoURL2[i] + '" alt="" width="140" border="0" /></a></div>' + '<a onmouseover="ClosePreviousPlayPauseNext2(); BigFunction(2,'+x+'); document.getElementById(Play['+i+']).src=\'./buttons/GreenPlayButton2.png\';' + 'document.getElementById(\'Big\').src=\'' + preVideoURL2[i] + video2[i] + postVideoURL2[i] + '\';' + 'document.getElementById(\'ChangeText\').innerHTML = Explain2['+i+']"' + 'onmouseout="BigFunction(1,'+x+'); document.getElementById(Play['+i+']).src=\'./buttons/TransparentImage.png\';' + 'document.getElementById(\'Big\').src=\'./buttons/TransparentImage.png\';' + 'document.getElementById(\'ChangeText\').innerHTML = \'\'">' + '<img onclick = "n=1; myFunctionB(); myFunction2B(); myFunction3B(); detectTouchMouse(number2['+i+']);" class="leftcolumn2" id="' + Play[i] + '" src="./buttons/TransparentImage.png" alt="" width = "171" height = "89" border="0" /></a></div>'; 
 
 document.getElementById(locate[i]).innerHTML=text[i];
 
@@ -147,7 +147,7 @@ function myFunction2B() {
         var text = new Array();	
     for (var i = 0; i < NumberOfVideos; i++) {
 
-    text[i] = '<div class="leftcolumn1">' + '<div class = "crop"><a><img src="' + preVideoURL2[i] + video2[i] + postSmallVideoURL2[i] + '" alt="" width="140" border="0" /></a></div>' + '<a onmouseover="ClosePreviousPlayPauseNext2(); document.getElementById(Play['+i+']).src=\'/buttons/GreenPlayButton2.png\';' + 'document.getElementById(\'borderForCenterTextinBox2\').style = \'border-style: solid; border-color: #000000; border-width: 3px\';' + 'document.getElementById(\'ChangeText2\').innerHTML = Explain2['+i+']"' + 'onmouseout="document.getElementById(Play['+i+']).src=\'/buttons/TransparentImage.png\';' + 'document.getElementById(\'borderForCenterTextinBox2\').style = \'\';' + 'document.getElementById(\'ChangeText2\').innerHTML = \'\'">' + '<img onclick = "n=1; detectTouchMouse(number2['+i+']);" class="leftcolumn2" id="' + Play[i] + '" src="/buttons/TransparentImage.png" alt="" width = "171" height = "89" border="0" /></a></div>'; 
+    text[i] = '<div class="leftcolumn1">' + '<div class = "crop"><a><img src="' + preVideoURL2[i] + video2[i] + postSmallVideoURL2[i] + '" alt="" width="140" border="0" /></a></div>' + '<a onmouseover="ClosePreviousPlayPauseNext2(); document.getElementById(Play['+i+']).src=\'./buttons/GreenPlayButton2.png\';' + 'document.getElementById(\'borderForCenterTextinBox2\').style = \'border-style: solid; border-color: #000000; border-width: 3px\';' + 'document.getElementById(\'ChangeText2\').innerHTML = Explain2['+i+']"' + 'onmouseout="document.getElementById(Play['+i+']).src=\'./buttons/TransparentImage.png\';' + 'document.getElementById(\'borderForCenterTextinBox2\').style = \'\';' + 'document.getElementById(\'ChangeText2\').innerHTML = \'\'">' + '<img onclick = "n=1; detectTouchMouse(number2['+i+']);" class="leftcolumn2" id="' + Play[i] + '" src="./buttons/TransparentImage.png" alt="" width = "171" height = "89" border="0" /></a></div>'; 
 
 document.getElementById(locate[i]).innerHTML=text[i];
 
@@ -264,14 +264,14 @@ function BigFunction(x,y) {
     p = step - 1;
 
     if (ShowSlideBoxOrShowVideoDescription == 1 & VideoSelected == 0) {
-        document.getElementById("showPlayRedGreenButton").innerHTML = '<img onmouseover = "q=2; showExplain3(); slideVideo(); ClosePreviousPlayPauseNext2()" onmouseout="q=1; closeExplain3(); SlideVideoOnOff = 2; closeslidevideo()" style = "position:absolute; top:6.5%; right:0; left:0; margin:auto; width:700px; height:312px; z-index:3;"' + 'onclick="detectTouchMouse3()"' + 'src="/buttons/TransparentImage.png" alt="" border="0" /></a>';
+        document.getElementById("showPlayRedGreenButton").innerHTML = '<img onmouseover = "q=2; showExplain3(); slideVideo(); ClosePreviousPlayPauseNext2()" onmouseout="q=1; closeExplain3(); SlideVideoOnOff = 2; closeslidevideo()" style = "position:absolute; top:6.5%; right:0; left:0; margin:auto; width:700px; height:312px; z-index:3;"' + 'onclick="detectTouchMouse3()"' + 'src="./buttons/TransparentImage.png" alt="" border="0" /></a>';
 
-        document.getElementById("showVideo").innerHTML = '<img onmouseover = "PreviousPlayPauseNext(); previous(); next(); pauseit(); play();" id="Big" style = "position:absolute; top:81.5%; right:0; left:0; margin:auto; width:700px; height:82px; z-index:3;"' + 'src="/buttons/TransparentImage.png" alt="" border="0" /></a>';
+        document.getElementById("showVideo").innerHTML = '<img onmouseover = "PreviousPlayPauseNext(); previous(); next(); pauseit(); play();" id="Big" style = "position:absolute; top:81.5%; right:0; left:0; margin:auto; width:700px; height:82px; z-index:3;"' + 'src="./buttons/TransparentImage.png" alt="" border="0" /></a>';
 
     }
 
     if (ShowSlideBoxOrShowVideoDescription == 2 & VideoSelected == 0) {
-        document.getElementById("showVideo").innerHTML = '<img id="Big" style = "position:absolute; top:28px; right:0; left:0; margin:auto; width:700px; z-index:2;"' + 'src="/buttons/TransparentImage.png" alt="" border="0" /></a>';}
+        document.getElementById("showVideo").innerHTML = '<img id="Big" style = "position:absolute; top:28px; right:0; left:0; margin:auto; width:700px; z-index:2;"' + 'src="./buttons/TransparentImage.png" alt="" border="0" /></a>';}
 
 }
 
@@ -279,7 +279,7 @@ var SlideVideoOnOff;
 
 function slideVideo() {
     
-    document.getElementById("PlayRedGreen").innerHTML = '<a onmouseover="q=2; showExplain3(); SlideVideoOnOff=1; document.getElementById(\'playredgreenbutton\').src=\'/buttons/play.green.png\'">' + '<img id="playredgreenbutton" onclick="n=2; q=1; closeslidevideo2(); PlayVideoFromSlide('+step+'); CloseVideo(); closeExplain3(); myFunctionB(); myFunction2B(); myFunction3B(); KeepImageBorderColor(); onYouTubeIframeAPIReady()" style="position: absolute; top: 0px; left: 0px; z-index:4;"' + 'src="/buttons/play.red.png" alt="" border="0" /></a>';}
+    document.getElementById("PlayRedGreen").innerHTML = '<a onmouseover="q=2; showExplain3(); SlideVideoOnOff=1; document.getElementById(\'playredgreenbutton\').src=\'./buttons/play.green.png\'">' + '<img id="playredgreenbutton" onclick="n=2; q=1; closeslidevideo2(); PlayVideoFromSlide('+step+'); CloseVideo(); closeExplain3(); myFunctionB(); myFunction2B(); myFunction3B(); KeepImageBorderColor(); onYouTubeIframeAPIReady()" style="position: absolute; top: 0px; left: 0px; z-index:4;"' + 'src="./buttons/play.red.png" alt="" border="0" /></a>';}
 
 function closeslidevideo() {    
     setTimeout(function(){	
@@ -327,7 +327,7 @@ function pauseit() {
     
     if (pauseiton == true) {
 
-    document.getElementById("PlayOrPause").innerHTML = '<a onmouseover="document.getElementById(\'pausebutton\').src=\'/buttons/pause.in.png\'"' + 'onmouseout="document.getElementById(\'pausebutton\').src=\'/buttons/pause.out.png\'">' + '<img id="pausebutton" onclick="changeparameters(); play(); pauseSlides();"' + 'src="/buttons/pause.out.png" alt="" border="0" /></a>';}    
+    document.getElementById("PlayOrPause").innerHTML = '<a onmouseover="document.getElementById(\'pausebutton\').src=\'./buttons/pause.in.png\'"' + 'onmouseout="document.getElementById(\'pausebutton\').src=\'./buttons/pause.out.png\'">' + '<img id="pausebutton" onclick="changeparameters(); play(); pauseSlides();"' + 'src="./buttons/pause.out.png" alt="" border="0" /></a>';}    
     
 } 
 
@@ -335,25 +335,25 @@ function play() {
     
     if (playon == true) {    
 
-    document.getElementById("PlayOrPause").innerHTML = '<a onmouseover="document.getElementById(\'playbutton\').src=\'/buttons/play.in.png\'"' + 'onmouseout="document.getElementById(\'playbutton\').src=\'/buttons/play.out.png\'">' + '<img id="playbutton" onclick="changeparameters(); pauseit(); slideit();"' + 'src="/buttons/play.out.png" alt="" border="0" /></a>';}
+    document.getElementById("PlayOrPause").innerHTML = '<a onmouseover="document.getElementById(\'playbutton\').src=\'./buttons/play.in.png\'"' + 'onmouseout="document.getElementById(\'playbutton\').src=\'./buttons/play.out.png\'">' + '<img id="playbutton" onclick="changeparameters(); pauseit(); slideit();"' + 'src="./buttons/play.out.png" alt="" border="0" /></a>';}
 
 }
 
 function previous() {
     
-    document.getElementById("previous").innerHTML = '<a onmouseover="document.getElementById(\'previousbutton\').src=\'/buttons/Prev.in.png\'"' + 'onmouseout="document.getElementById(\'previousbutton\').src=\'/buttons/Prev.out.png\'">' + '<img id="previousbutton" onclick="slideit(-1); pauseSlides(); PrevNextParametersForPausePlay(); play();"' + 'src="/buttons/Prev.out.png" alt="" border="0" /></a>';}
+    document.getElementById("previous").innerHTML = '<a onmouseover="document.getElementById(\'previousbutton\').src=\'./buttons/Prev.in.png\'"' + 'onmouseout="document.getElementById(\'previousbutton\').src=\'./buttons/Prev.out.png\'">' + '<img id="previousbutton" onclick="slideit(-1); pauseSlides(); PrevNextParametersForPausePlay(); play();"' + 'src="./buttons/Prev.out.png" alt="" border="0" /></a>';}
 
 function next() {
 
-	document.getElementById("next").innerHTML = '<a onmouseover="document.getElementById(\'nextbutton\').src=\'/buttons/Next.in.png\'"' + 'onmouseout="document.getElementById(\'nextbutton\').src=\'/buttons/Next.out.png\'">' + '<img id="nextbutton" onclick="slideit(1); pauseSlides(); PrevNextParametersForPausePlay(); play();"' + 'src="/buttons/Next.out.png" alt="" border="0" /></a>';}
+	document.getElementById("next").innerHTML = '<a onmouseover="document.getElementById(\'nextbutton\').src=\'./buttons/Next.in.png\'"' + 'onmouseout="document.getElementById(\'nextbutton\').src=\'./buttons/Next.out.png\'">' + '<img id="nextbutton" onclick="slideit(1); pauseSlides(); PrevNextParametersForPausePlay(); play();"' + 'src="./buttons/Next.out.png" alt="" border="0" /></a>';}
 
 function CloseVideo() {
 
-    document.getElementById("closevideo").innerHTML = '<a onmouseover="document.getElementById(\'closevideobutton\').src=\'/buttons/close.in.png\'"' + 'onmouseout="document.getElementById(\'closevideobutton\').src=' + '\'/buttons/TransparentImage.png\'">' + '<img id="closevideobutton" onclick="videoAppears(0);" height = "20px"' + 'style="position: absolute; top: 15px; left: 428px; z-index:4;"' + 'src="/buttons/close.in.png" alt="" border="0" /></a>';}
+    document.getElementById("closevideo").innerHTML = '<a onmouseover="document.getElementById(\'closevideobutton\').src=\'./buttons/close.in.png\'"' + 'onmouseout="document.getElementById(\'closevideobutton\').src=' + '\'./buttons/TransparentImage.png\'">' + '<img id="closevideobutton" onclick="videoAppears(0);" height = "20px"' + 'style="position: absolute; top: 15px; left: 428px; z-index:4;"' + 'src="./buttons/close.in.png" alt="" border="0" /></a>';}
 
 function CloseVideo2() {
     
-    document.getElementById("closevideo").innerHTML = '<a onmouseover="document.getElementById(\'closevideobutton\').src=\'/buttons/close.in.png\'"' + 'onmouseout="document.getElementById(\'closevideobutton\').src=' + '\'/buttons/TransparentImage.png\'">' + '<img id="closevideobutton" onclick="videoAppears(0);" height = "20px"' + 'style="position: absolute; top: 15px; left: 428px; z-index:4;"' + 'src="/buttons/TransparentImage.png" alt="" border="0" /></a>';}
+    document.getElementById("closevideo").innerHTML = '<a onmouseover="document.getElementById(\'closevideobutton\').src=\'./buttons/close.in.png\'"' + 'onmouseout="document.getElementById(\'closevideobutton\').src=' + '\'./buttons/TransparentImage.png\'">' + '<img id="closevideobutton" onclick="videoAppears(0);" height = "20px"' + 'style="position: absolute; top: 15px; left: 428px; z-index:4;"' + 'src="./buttons/TransparentImage.png" alt="" border="0" /></a>';}
 
 // All this stuff below to function videoAppears is to create videos that connect back to back.
 
