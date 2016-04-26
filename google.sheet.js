@@ -75,7 +75,7 @@ srcUrl = ["https://www.lds.org/bible-videos/videos/christ-appears-on-the-road-to
 
 athr = ["Luke 24:13-33", "John 8:12-58", "Myra Brooks Welch"];
 
-srcName = ["Christ Appears on the Road to Emmaus", "Jesus Declares: I Am the Light of the World, the Truth Shall Make You Free", "Master/'s Touch (Violin)"];
+srcName = ["Christ Appears on the Road to Emmaus", "Jesus Declares: I Am the Light of the World, the Truth Shall Make You Free", "Master\'s Touch (Violin)"];
 
 srce = ["BibleVideos.org", "BibleVideos.org", "Based on Poem"];
 
@@ -85,10 +85,10 @@ i = z - 1;
  
 var vid2 = 'https://www.youtube.com/embed/' + multivid + '?enablejsapi=1&version=3&playerapiid=ytplayer&autoplay=1&vq=720p&rel=0&start=' + StartTimeMult + '&end=' + EndTimeMult; var posterURL = 'http://images.weserv.nl/?url=i.ytimg.com/vi/CVWJBM_gwGg/maxresdefault.jpg';
       
-mycode = '<iframe id="myvid" style = "position: relative; z-index:4; top:28px;" width="700" height="393" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen allowfullscreen="true" allowscriptaccess="always" quality="high" bgcolor="#000000" name="my-video" style=""' + 'src= "' + vid2 + '"' + 'type="application/x-shockwave-flash"></iframe>' + '<a style = "position: absolute; z-index:10; top:430px; left:0px; right:0px; text-align:center; text-decoration: none" href="' + srcUrl[i] + '" target="_blank"><font id = "talkLink2" size="2">' + athr[i] + ', &quot;' + srcName[i] + ',&quot; ' + srce[i] + ', ' + mnthYr[i] + '</font></a>';
+mycode = '<iframe id="myvid" style = "position: relative; z-index:4; top:28px;" width="700" height="393" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen allowfullscreen="true" allowscriptaccess="always" quality="high" bgcolor="#000000" name="my-video" style=""' + 'src= "' + vid2 + '"' + 'type="application/x-shockwave-flash"></iframe>' + '<a style = "position: absolute; z-index:10; top:428px; left:0px; right:0px; text-align:center; text-decoration: none" href="' + srcUrl[i] + '" target="_blank"><font id = "talkLink2" size="2">' + athr[i] + ', &quot;' + srcName[i] + ',&quot; ' + srce[i] + ', ' + mnthYr[i] + '</font></a>';
 
 document.getElementById("showVideo").innerHTML = mycode;
 
 }
 
-Explain3 = ["<div class='textinmiddle'><a class = 'small'><p class = 'top'>Christ Appears on the Road to Emmaus</p><p class = 'middle'>Luke 24:13-33</p></a></div>", "<div class='textinmiddle'><a class = 'small'><p class = 'top'>Jesus Declares I Am the Light of the World the Truth Shall Make You Free</p><p class = 'middle'>John 8:12-58</p></a></div>", "<div class='textinmiddle'><a class = 'small'><p class = 'top'>The Touch of the Master/'s Hand</p><p class = 'middle'>Based on the Poem by Myra Brooks Welch</p></a></div>"];
+Explain3 = ["<div class='textinmiddle'><a class = 'small'><p class = 'top'>Christ Appears on the Road to Emmaus</p><p class = 'middle'>Luke 24:13-33</p></a></div>", "<div class='textinmiddle'><a class = 'small'><p class = 'top'>Jesus Declares I Am the Light of the World the Truth Shall Make You Free</p><p class = 'middle'>John 8:12-58</p></a></div>", "<div class='textinmiddle'><a class = 'small'><p class = 'top'>The Touch of the Master\'s Hand</p><p class = 'middle'>Based on the Poem by Myra Brooks Welch</p></a></div>"];
