@@ -279,7 +279,7 @@ var SlideVideoOnOff;
 
 function slideVideo() {
     
-    document.getElementById("PlayRedGreen").innerHTML = '<a onmouseover="q=2; showExplain3(); SlideVideoOnOff=1; document.getElementById(\'playredgreenbutton\').src=\'https://a808b260df4813bc800f00df9eeaad349cf5872f.googledrive.com/host/0B9DXzVBr30sfTXNKN3JIN3ppRjA/Buttons/play.green.png\'">' + '<img id="playredgreenbutton" onclick="n=2; q=1; closeslidevideo2(); PlayVideoFromSlide('+step+'); CloseVideo(); closeExplain3(); myFunctionB(); myFunction2B(); myFunction3B(); onYouTubeIframeAPIReady()" style="position: absolute; top: 0px; left: 0px; z-index:4;"' + 'src="https://a808b260df4813bc800f00df9eeaad349cf5872f.googledrive.com/host/0B9DXzVBr30sfTXNKN3JIN3ppRjA/Buttons/play.red.png" alt="" border="0" /></a>';}
+    document.getElementById("PlayRedGreen").innerHTML = '<a onmouseover="q=2; showExplain3(); SlideVideoOnOff=1; document.getElementById(\'playredgreenbutton\').src=\'https://a808b260df4813bc800f00df9eeaad349cf5872f.googledrive.com/host/0B9DXzVBr30sfTXNKN3JIN3ppRjA/Buttons/play.green.png\'">' + '<img id="playredgreenbutton" onclick="n=2; q=1; closeslidevideo2(); PlayVideoFromSlide('+step+'); CloseVideo(); closeExplain3(); myFunctionB(); myFunction2B(); myFunction3B(); KeepImageBorderColor(); onYouTubeIframeAPIReady()" style="position: absolute; top: 0px; left: 0px; z-index:4;"' + 'src="https://a808b260df4813bc800f00df9eeaad349cf5872f.googledrive.com/host/0B9DXzVBr30sfTXNKN3JIN3ppRjA/Buttons/play.red.png" alt="" border="0" /></a>';}
 
 function closeslidevideo() {    
     setTimeout(function(){	
