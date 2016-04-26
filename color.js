@@ -121,12 +121,12 @@ var c=1;
 
 function ColorPalette() {
 
-	document.getElementById("colorpalette").innerHTML = '<div style = "position:relative"><a onmouseover="document.getElementById(\'colorbutton\').src=\'https://a808b260df4813bc800f00df9eeaad349cf5872f.googledrive.com/host/0B9DXzVBr30sfTXNKN3JIN3ppRjA/Buttons/color.in.png\'"' + 'onmouseout="document.getElementById(\'colorbutton\').src=' + 
+	document.getElementById("colorpalette").innerHTML = '<div style = "position:relative"><a onmouseover="document.getElementById(\'colorbutton\').src=\'./buttons/color.in.png\'"' + 'onmouseout="document.getElementById(\'colorbutton\').src=' + 
 
-'\'https://a808b260df4813bc800f00df9eeaad349cf5872f.googledrive.com/host/0B9DXzVBr30sfTXNKN3JIN3ppRjA/Buttons/color.out.png\'">' +
+'\'./buttons/color.out.png\'">' +
 
 '<img id="colorbutton" style = "position:absolute; top:15px; right:104px;" onclick="show(\'EntireColorBox\'); PresetColors(); CloseOrOpenSlideShow()" height = "50px"' + 
- 'src="https://a808b260df4813bc800f00df9eeaad349cf5872f.googledrive.com/host/0B9DXzVBr30sfTXNKN3JIN3ppRjA/Buttons/color.out.png" alt="" border="0" /></div></a>';}
+ 'src="./buttons/color.out.png" alt="" border="0" /></div></a>';}
 
 ColorPalette();
 
