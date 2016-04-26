@@ -75,9 +75,9 @@ srcUrl = ["https://www.lds.org/bible-videos/videos/christ-appears-on-the-road-to
 
 athr = ["Luke 24:13-33", "John 8:12-58", "Kenneth Cope"];
 
-srcName = ["Christ Appears on the Road to Emmaus", "Jesus Declares: I Am the Light of the World, the Truth Shall Make You Free", "Carpenter's Son"];
+srcName = ["Christ Appears on the Road to Emmaus", "Jesus Declares: I Am the Light of the World, the Truth Shall Make You Free", "Carpenter\'s Son"];
 
-srce = ["BibleVideos.org", "BibleVideos.org", "Song: Carpenter's Son"];
+srce = ["BibleVideos.org", "BibleVideos.org", "Song: Carpenter\'s Son"];
 
 mnthYr = ["May 2014", "October 2012", "October 2007"];
 
@@ -91,4 +91,4 @@ document.getElementById("showVideo").innerHTML = mycode;
 
 }
 
-Explain3 = ["<div class='textinmiddle'><a class = 'small'><p class = 'top'>Christ Appears on the Road to Emmaus</p><p class = 'middle'>Luke 24:13-33</p></a></div>", "<div class='textinmiddle'><a class = 'small'><p class = 'top'>Jesus Declares: I Am the Light of the World, the Truth Shall Make You Free</p><p class = 'middle'>John 8:12-58</p></a></div>", "<div class='textinmiddle'><a class = 'small'><p class = 'top'>Carpenter's Son</p><p class = 'middle'>Kenneth Cope</p></a></div>"];
+Explain3 = ["<div class='textinmiddle'><a class = 'small'><p class = 'top'>Christ Appears on the Road to Emmaus</p><p class = 'middle'>Luke 24:13-33</p></a></div>", "<div class='textinmiddle'><a class = 'small'><p class = 'top'>Jesus Declares: I Am the Light of the World, the Truth Shall Make You Free</p><p class = 'middle'>John 8:12-58</p></a></div>", "<div class='textinmiddle'><a class = 'small'><p class = 'top'>Carpenter\'s Son</p><p class = 'middle'>Kenneth Cope</p></a></div>"];
