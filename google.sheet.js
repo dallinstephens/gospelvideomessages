@@ -59,7 +59,7 @@ sourceUrl = ["https://www.lds.org/general-conference/2015/10/keep-the-commandmen
 
 author = ["Thomas S. Monson", "Mary R. Durham", "Thomas S. Monson", "Henry B. Eyring", "Donald L. Hallstrom", "Kevin R. Duncan", "Hilary Weeks", "Gary E. Stevenson", "Because of Him", "Jeffrey R. Holland", "David A. Bednar"];
 
-sourceName = ["Keep the Commandments", "A Child\'s Guiding Gift", "Keep the Commandments", "Where Two or Three Are Gathered", "I Am a Child of God", "The Healing Ointment of Forgiveness", "Beautiful Heartbreak ", "Where Are the Keys and Authority of the Priesthood?", "Because of Him", "Tomorrow the Lord Will Do Wonders among You", "Patterns of Light Spirit of Revelation"];
+sourceName = ["Keep the Commandments", "A Child\'s Guiding Gift", "Keep the Commandments", "Where Two or Three Are Gathered", "I Am a Child of God", "The Healing Ointment of Forgiveness", "Beautiful Heartbreak ", "Where Are the Keys and Authority of the Priesthood?", "Because of Him", "Tomorrow the Lord Will Do Wonders among You", "Patterns of Light: Spirit of Revelation"];
 
 source = ["General Conference", "General Conference", "General Conference", "General Conference", "General Conference", "General Conference", "General Conference", "General Conference", "LDS Website", "General Conference", "Mormon Messages"];
 
@@ -69,17 +69,17 @@ function PlayVideoFromSlide(z) {
 
 videonum = z;
 
-if (videonum == 1) {multivid = ["8YlzWPPiH4A"]; StartTimeMult = ["0"]; EndTimeMult = ["0"];} if (videonum == 2) {multivid = ["9R5VwxvUUvI"]; StartTimeMult = ["0"]; EndTimeMult = ["0"];} if (videonum == 3) {multivid = ["vNtdIAbyyXw"]; StartTimeMult = ["0"]; EndTimeMult = ["0"];} 
+if (videonum == 1) {multivid = ["8YlzWPPiH4A"]; StartTimeMult = ["0"]; EndTimeMult = ["0"];} if (videonum == 2) {multivid = ["9R5VwxvUUvI"]; StartTimeMult = ["0"]; EndTimeMult = ["0"];} if (videonum == 3) {multivid = ["r1J58SSjpqI"]; StartTimeMult = ["655"]; EndTimeMult = ["1060"];} 
 
-srcUrl = ["https://www.lds.org/bible-videos/videos/christ-appears-on-the-road-to-emmaus?lang=eng", "https://www.lds.org/bible-videos/videos/jesus-declares-i-am-the-light-of-the-world-the-truth-shall-make-you-free?lang=eng", "https://www.youtube.com/watch?v=vNtdIAbyyXw"];
+srcUrl = ["https://www.lds.org/bible-videos/videos/christ-appears-on-the-road-to-emmaus?lang=eng", "https://www.lds.org/bible-videos/videos/jesus-declares-i-am-the-light-of-the-world-the-truth-shall-make-you-free?lang=eng", "https://www.youtube.com/watch?v=r1J58SSjpqI"];
 
-athr = ["Luke 24 13 33", "John 8 12 58", "Kenneth Cope"];
+athr = ["Luke 24:13-33", "John 8:12-58", "Myra Brooks Welch"];
 
-srcName = ["Christ Appears on the Road to Emmaus", "Jesus Declares I Am the Light of the World the Truth Shall Make You Free", "Carpenter s Son"];
+srcName = ["Christ Appears on the Road to Emmaus", "Jesus Declares: I Am the Light of the World, the Truth Shall Make You Free", "Master/'s Touch (Violin)"];
 
-srce = ["BibleVideosorg", "BibleVideosorg", "Song Carpenter s Son"];
+srce = ["BibleVideos.org", "BibleVideos.org", "Based on Poem"];
 
-mnthYr = ["May 2014", "October 2012", "October 2007"];
+mnthYr = ["May 2014", "October 2012", "March 2012"];
 
 i = z - 1;
  
@@ -91,4 +91,4 @@ document.getElementById("showVideo").innerHTML = mycode;
 
 }
 
-Explain3 = ["<div class='textinmiddle'><a class = 'small'><p class = 'top'>Christ Appears on the Road to Emmaus</p><p class = 'middle'>Luke 24 13 33</p></a></div>", "<div class='textinmiddle'><a class = 'small'><p class = 'top'>Jesus Declares I Am the Light of the World the Truth Shall Make You Free</p><p class = 'middle'>John 8 12 58</p></a></div>", "<div class='textinmiddle'><a class = 'small'><p class = 'top'>Carpenter s Son</p><p class = 'middle'>Kenneth Cope</p></a></div>"];
+Explain3 = ["<div class='textinmiddle'><a class = 'small'><p class = 'top'>Christ Appears on the Road to Emmaus</p><p class = 'middle'>Luke 24:13-33</p></a></div>", "<div class='textinmiddle'><a class = 'small'><p class = 'top'>Jesus Declares I Am the Light of the World the Truth Shall Make You Free</p><p class = 'middle'>John 8:12-58</p></a></div>", "<div class='textinmiddle'><a class = 'small'><p class = 'top'>The Touch of the Master/'s Hand</p><p class = 'middle'>Based on the Poem by Myra Brooks Welch</p></a></div>"];
