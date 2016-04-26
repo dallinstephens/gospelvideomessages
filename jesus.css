@@ -8,7 +8,7 @@
 .firstsetjesus-026, .firstsetjesus-027, .firstsetjesus-028, .firstsetjesus-029, .firstsetjesus-030, 
 .firstsetjesus-031, .firstsetjesus-032, .firstsetjesus-033, .firstsetjesus-034, .firstsetjesus-035, 
 .firstsetjesus-036, .firstsetjesus-037
-{ max-width: 100%; background-size: 100%; background-image: url('https://a808b260df4813bc800f00df9eeaad349cf5872f.googledrive.com/host/0B9DXzVBr30sfTXNKN3JIN3ppRjA/sprites/firstset.jpg'); }
+{ max-width: 100%; background-size: 100%; background-image: url('./sprites/firstset.jpg'); }
  
 .firstsetjesus-001 { background-position: 0 0%; background-size: 100%; }
 .firstsetjesus-002 { background-position: 0 2.777778%; background-size: 100%; }
@@ -58,7 +58,7 @@
 .secondsetjesus-063, .secondsetjesus-064, .secondsetjesus-065, .secondsetjesus-066, .secondsetjesus-067,
 .secondsetjesus-068, .secondsetjesus-069, .secondsetjesus-070, .secondsetjesus-071, .secondsetjesus-072,
 .secondsetjesus-073, .secondsetjesus-074
-{ max-width: 100%; background-size: 100%; background-image: url('https://a808b260df4813bc800f00df9eeaad349cf5872f.googledrive.com/host/0B9DXzVBr30sfTXNKN3JIN3ppRjA/sprites/secondset.jpg'); }
+{ max-width: 100%; background-size: 100%; background-image: url('./sprites/secondset.jpg'); }
  
 .secondsetjesus-038 { background-position: 0 0%; background-size: 100%; }
 .secondsetjesus-039 { background-position: 0 2.777778%; background-size: 100%; }
@@ -108,7 +108,7 @@
 .thirdsetjesus-100, .thirdsetjesus-101, .thirdsetjesus-102, .thirdsetjesus-103, .thirdsetjesus-104,
 .thirdsetjesus-105, .thirdsetjesus-106, .thirdsetjesus-107, .thirdsetjesus-108, .thirdsetjesus-109,
 .thirdsetjesus-110, .thirdsetjesus-111
-{ max-width: 100%; background-size: 100%; background-image: url('https://a808b260df4813bc800f00df9eeaad349cf5872f.googledrive.com/host/0B9DXzVBr30sfTXNKN3JIN3ppRjA/sprites/thirdset.jpg'); }
+{ max-width: 100%; background-size: 100%; background-image: url('./sprites/thirdset.jpg'); }
  
 .thirdsetjesus-075 { background-position: 0 0%; background-size: 100%; }
 .thirdsetjesus-076 { background-position: 0 2.777778%; background-size: 100%; }
@@ -147,4 +147,3 @@
 .thirdsetjesus-109 { background-position: 0 94.444444%; background-size: 100%; }
 .thirdsetjesus-110 { background-position: 0 97.222222%; background-size: 100%; }
 .thirdsetjesus-111 { background-position: 0 100%; background-size: 100%; }
-
