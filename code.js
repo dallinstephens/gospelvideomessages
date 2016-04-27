@@ -3,6 +3,7 @@
 	var spriteSource = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAArwAAAGJAQMAAABSK3KDAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAADlJREFUeNrtwTEBAAAAwqD1T20ND6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAOwOIoQABlnB/ewAAAABJRU5ErkJggg==";
 var step = 1;
 //	var step = Math.floor(Math.random()*(110+1)); This includes step 0 and the left number is the highest number than can be drawn.
+localStorage.setItem(step,step);
 
 	var set;
 
