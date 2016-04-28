@@ -2,45 +2,47 @@ var JesusImageNumber = ["001","002","003","004","005","006","007","008","009","0
 
 var spriteSource = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAArwAAAGJAQMAAABSK3KDAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAADlJREFUeNrtwTEBAAAAwqD1T20ND6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAOwOIoQABlnB/ewAAAABJRU5ErkJggg==";
 
-//	var step = Math.floor(Math.random()*(110+1)); This includes step 0 and the left number is the highest number than can be drawn.
-// Get Item from LocalStorage or step === 0
-var step = localStorage.getItem('step')||0;
+//	var step = Math.floor(Math.random()*(110+1)); This includes step 0 and the left number is the highest number than can be drawn
 
-	var set;
+var step = 0;
 
-	var GoORstop;
+var set;
 
-	function slideit(nextPrev) {
+var GoORstop;
 
-		if (nextPrev == -1 && step > -2) {step = step - 2;}
-
-		if (step < 0) {step = 110;}
-
-		if(step<37) {set = "firstsetjesus-"}
+function slideit(nextPrev) {
 		
-		if(step>=37 && step<74) {set = "secondsetjesus-"}
+	step = localStorage.getItem('step'); // Get Item from LocalStorage
 
-		if(step>=74) {set = "thirdsetjesus-"}
+	if (nextPrev == -1 && step > -2) {step = step - 2;}
 
-		var mycode = "<img class='" + set + JesusImageNumber[step] + "' src = '" + spriteSource + "' border='0' />";
+	if (step < 0) {step = 110;}
 
-		document.getElementById("demo").innerHTML = mycode; KeepImageBorderColor();
+	if(step<37) {set = "firstsetjesus-"}
 		
-		if (q==2) {document.getElementById('ChangeText2').innerHTML = Explain3[step]; document.getElementById('borderForCenterTextinBox2').style = 'border-style: solid; border-color: #000000; border-width: 3px';}
+	if(step>=37 && step<74) {set = "secondsetjesus-"}
 
-		if(step<110 || nextPrev == -1) step = Number(step) + 1;
+	if(step>=74) {set = "thirdsetjesus-"}
 
-            	else step=0;
+	var mycode = "<img class='" + set + JesusImageNumber[step] + "' src = '" + spriteSource + "' border='0' />";
+
+	document.getElementById("demo").innerHTML = mycode; KeepImageBorderColor();
+		
+	if (q==2) {document.getElementById('ChangeText2').innerHTML = Explain3[step]; document.getElementById('borderForCenterTextinBox2').style = 'border-style: solid; border-color: #000000; border-width: 3px';}
+
+	if(step<110 || nextPrev == -1) step = Number(step) + 1;
+
+        else step=0;
             	
-            	localStorage.setItem('step', step);
+        localStorage.setItem('step', step);
 
-		if (nextPrev == -1) {pauseSlides();}
+	if (nextPrev == -1) {pauseSlides();}
 
-		if (nextPrev == 1) {pauseSlides();}
+	if (nextPrev == 1) {pauseSlides();}
 
-            	GoORstop = setTimeout(slideit,2500);
+        GoORstop = setTimeout(slideit,2500);
     		
-	}	
+}	
  
 	function pauseSlides() {clearTimeout(GoORstop);}
 
