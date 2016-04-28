@@ -283,7 +283,7 @@ var SlideVideoOnOff;
 
 function slideVideo() {
     
-    document.getElementById("PlayRedGreen").innerHTML = '<a onmouseover="q=2; showExplain3(); SlideVideoOnOff=1; document.getElementById(\'playredgreenbutton\').src=\'./buttons/play.green.png\'">' + '<img id="playredgreenbutton" onclick="n=2; q=1; closeslidevideo2(); PlayVideoFromSlide('+step+'); CloseVideo(); closeExplain3(); myFunctionB(); myFunction2B(); myFunction3B(); KeepImageBorderColor(); onYouTubeIframeAPIReady()" style="position: absolute; top: 0px; left: 0px; z-index:4;"' + 'src="./buttons/play.red.png" alt="" border="0" /></a>';}
+    document.getElementById("PlayRedGreen").innerHTML = '<a onmouseover="q=2; showExplain3(); SlideVideoOnOff=1; document.getElementById(\'playredgreenbutton\').src=\'./buttons/play.green.png\'">' + '<img id="playredgreenbutton" onclick="n=2; q=1; pauseSlides(); closeslidevideo2(); PlayVideoFromSlide('+step+'); CloseVideo(); closeExplain3(); myFunctionB(); myFunction2B(); myFunction3B(); KeepImageBorderColor(); onYouTubeIframeAPIReady()" style="position: absolute; top: 0px; left: 0px; z-index:4;"' + 'src="./buttons/play.red.png" alt="" border="0" /></a>';}
 
 function closeslidevideo() {    
     setTimeout(function(){	
