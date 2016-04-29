@@ -1,51 +1,3 @@
-var JesusImageNumber = ["001","002","003","004","005","006","007","008","009","010","011","012","013","014","015","016","017","018","019","020","021","022","023","024","025","026","027","028","029","030","031","032","033","034","035","036","037","038","039","040","041","042","043","044","045","046","047","048","049","050","051","052","053","054","055","056","057","058","059","060","061","062","063","064","065","066","067","068","069","070","071","072","073","074","075","076","077","078","079","080","081","082","083","084","085","086","087","088","089","090","091","092","093","094","095","096","097","098","099","100","101","102","103","104","105","106","107","108","109","110","111"];
-
-var spriteSource = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAArwAAAGJAQMAAABSK3KDAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAADlJREFUeNrtwTEBAAAAwqD1T20ND6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAOwOIoQABlnB/ewAAAABJRU5ErkJggg==";
-
-//	var step = Math.floor(Math.random()*(110+1)); This includes step 0 and the left number is the highest number than can be drawn
-
-var step = 0;
-
-var set;
-
-var GoORstop;
-
-function slideit(nextPrev) {
-		
-	step = localStorage.getItem('step'); // Get Item from LocalStorage
-
-	if (nextPrev == -1 && step > -2) {step = step - 2;}
-
-	if (step < 0) {step = 110;}
-
-	if(step<37) {set = "firstsetjesus-"}
-		
-	if(step>=37 && step<74) {set = "secondsetjesus-"}
-
-	if(step>=74) {set = "thirdsetjesus-"}
-
-	var mycode = "<img class='" + set + JesusImageNumber[step] + "' src = '" + spriteSource + "' border='0' />";
-
-	document.getElementById("demo").innerHTML = mycode; KeepImageBorderColor();
-		
-	if (q==2) {document.getElementById('ChangeText2').innerHTML = Explain3[step]; document.getElementById('borderForCenterTextinBox2').style = 'border-style: solid; border-color: #000000; border-width: 3px';}
-
-	if(step<110 || nextPrev == -1) step = Number(step) + 1;
-
-        else step=0;
-            	
-        localStorage.setItem('step', step);
-
-	if (nextPrev == -1) {pauseSlides();}
-
-	if (nextPrev == 1) {pauseSlides();}
-
-        GoORstop = setTimeout(slideit,2500);
-    		
-}	
- 
-	function pauseSlides() {clearTimeout(GoORstop);}
-
 var n; var q;
 
 function videoAppears(videoNumber) {
@@ -62,7 +14,7 @@ function videoAppears(videoNumber) {
 	
     if (slideOrVideo >= 1) {multivideos(slideOrVideo); var vid = 'https://www.youtube.com/embed/' + multivideo[0] + '?enablejsapi=1&version=3&playerapiid=ytplayer&autoplay=1&vq=720p&rel=0&start=' + StartTimeMulti[0] + '&end=' + EndTimeMulti[0]; var posterURL = 'http://images.weserv.nl/?url=i.ytimg.com/vi/CVWJBM_gwGg/maxresdefault.jpg';		
       	
-        var mycode = '<iframe id = "myvid" style = "position: relative; z-index:4; top:28px;" width="700" height="393" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen allowfullscreen="true" allowscriptaccess="always" quality="high" bgcolor="#000000" name="my-video" style=""' + 'src= "' + vid + '"' + 'type="application/x-shockwave-flash"></iframe>' + '<a style = "position: absolute; z-index:10; top:428px; left:0px; right:0px; text-align:center; text-decoration: none" href="' + sourceUrl[i] + '" target="_blank"><font id = "talkLink" size="2">' + author[i] + ', &quot;' + sourceName[i] + ',&quot; ' + source[i] + ', ' + monthYear[i] + '</font></a>';
+        mycode = '<iframe id = "myvid" style = "position: relative; z-index:4; top:28px;" width="700" height="393" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen allowfullscreen="true" allowscriptaccess="always" quality="high" bgcolor="#000000" name="my-video" style=""' + 'src= "' + vid + '"' + 'type="application/x-shockwave-flash"></iframe>' + '<a style = "position: absolute; z-index:10; top:428px; left:0px; right:0px; text-align:center; text-decoration: none" href="' + sourceUrl[i] + '" target="_blank"><font id = "talkLink" size="2">' + author[i] + ', &quot;' + sourceName[i] + ',&quot; ' + source[i] + ', ' + monthYear[i] + '</font></a>';
 
 	    document.getElementById("showVideo").innerHTML = mycode;
         CloseVideo();
@@ -76,20 +28,7 @@ if ("ontouchstart" in document.documentElement) {document.getElementById('myvid'
 
 }
 
-// NOTE: If the big image does not show up when hovering over the small video image, then fix it the following below. You may need to check if maxresdefault.jpg or hqdefault works for the that image.
-
-var preVideoURL = new Array();
-var postVideoURL = new Array();
-var postSmallVideoURL = new Array();
-for (var i = 0; i < NumberOfVideos; i++) {
-
-if (i >= 0) {preVideoURL[i] = 'http://images.weserv.nl/?url=i.ytimg.com/vi/'; postVideoURL[i] = '/maxresdefault.jpg'; postSmallVideoURL[i] = '/mqdefault.jpg'; }
-
-// if (i == 4 || i == 5 || i == 6) {preVideoURL[i] = 'http://images.weserv.nl/?url=i.ytimg.com/vi/'; postVideoURL[i] = '/hqdefault.jpg&trim=20'; postSmallVideoURL[i] = '/mqdefault.jpg'; }
-
-}
-
-var preVideoURL2 = clone(preVideoURL); var video2 = clone(video); var postVideoURL2 = clone(postVideoURL); var postSmallVideoURL2 = clone(postSmallVideoURL);
+var video2 = clone(video);
 
 var Explain2 = clone(Explain);
 
@@ -147,14 +86,14 @@ function shuffle() {
     }
 }
 
-shuffle(video, PlayButton, Explain, number, preVideoURL, postVideoURL, postSmallVideoURL);
+shuffle(video, PlayButton, Explain, number);
 
 function myFunction(x) {
 
 	var text = "";
     for (var i = 0; i < NumberOfVideos; i++) {
 
-	text += '<div class="rightcolumn1">' + '<div class = "crop"><a><img src="' + preVideoURL[i] + video[i] + postSmallVideoURL[i] + '" alt="" /></a></div>' + '<a onmouseover="ClosePreviousPlayPauseNext2(); BigFunction(2,'+x+'); document.getElementById(PlayButton['+i+']).src=\'./buttons/GreenPlayButton.png\';' + 'document.getElementById(\'Big\').src=\'' + preVideoURL[i] + video[i] + postVideoURL[i] + '\';' + 'document.getElementById(\'Big\').onerror = function() {document.getElementById(\'Big\').src=\'' + preVideoURL[i] + video[i] + '/hqdefault.jpg&trim=20\';};' + 'document.getElementById(\'ChangeText\').innerHTML = Explain['+i+']"' + 'onmouseout="BigFunction(1,'+x+'); document.getElementById(PlayButton['+i+']).src=\'./buttons/TransparentImage.png\';' + 'document.getElementById(\'Big\').src=\'./buttons/TransparentImage.png\';' + 'document.getElementById(\'ChangeText\').innerHTML = \'\'">' + '<img onclick = "n=1; myFunctionB(); myFunction2B(); myFunction3B(); detectTouchMouse(number['+i+']);" id="' + PlayButton[i] + '" src="./buttons/TransparentImage.png" class="rightcolumn2" alt="" border="0" /></a></div>';
+	text += '<div class="rightcolumn1">' + '<div class = "crop"><a><img src="' + preVideoURL + video[i] + postSmallVideoURL + '" alt="" /></a></div>' + '<a onmouseover="ClosePreviousPlayPauseNext2(); BigFunction(2,'+x+'); document.getElementById(PlayButton['+i+']).src=\'./buttons/GreenPlayButton.png\';' + 'document.getElementById(\'Big\').src=\'' + preVideoURL + video[i] + postVideoURL + '\';' + 'document.getElementById(\'Big\').onerror = function() {document.getElementById(\'Big\').src=\'' + preVideoURL + video[i] + '/hqdefault.jpg&trim=20\';};' + 'document.getElementById(\'ChangeText\').innerHTML = Explain['+i+']"' + 'onmouseout="BigFunction(1,'+x+'); document.getElementById(PlayButton['+i+']).src=\'./buttons/TransparentImage.png\';' + 'document.getElementById(\'Big\').src=\'./buttons/TransparentImage.png\';' + 'document.getElementById(\'ChangeText\').innerHTML = \'\'">' + '<img onclick = "n=1; myFunctionB(); myFunction2B(); myFunction3B(); detectTouchMouse(number['+i+']);" id="' + PlayButton[i] + '" src="./buttons/TransparentImage.png" class="rightcolumn2" alt="" border="0" /></a></div>';
 
     }
 
@@ -169,7 +108,7 @@ function myFunctionB() {
 	var text = "";
     for (var i = 0; i < NumberOfVideos; i++) {
 
-	text += '<div class="rightcolumn1">' + '<div class = "crop"><a><img src="' + preVideoURL[i] + video[i] + postSmallVideoURL[i] + '" alt="" /></a></div>' + '<a onmouseover="ClosePreviousPlayPauseNext2(); document.getElementById(PlayButton['+i+']).src=\'./buttons/GreenPlayButton.png\';' + 'document.getElementById(\'borderForCenterTextinBox2\').style = \'border-style: solid; border-color: #000000; border-width: 3px\';' + 'document.getElementById(\'ChangeText2\').innerHTML = Explain['+i+']"' + 'onmouseout="document.getElementById(PlayButton['+i+']).src=\'./buttons/TransparentImage.png\';' + 'document.getElementById(\'borderForCenterTextinBox2\').style = \'\';' + 'document.getElementById(\'ChangeText2\').innerHTML = \'\'">' + '<img onclick = "n=1; detectTouchMouse(number['+i+']);" id="' + PlayButton[i] + '" src="./buttons/TransparentImage.png" class="rightcolumn2" alt="" border="0" /></a></div>';
+	text += '<div class="rightcolumn1">' + '<div class = "crop"><a><img src="' + preVideoURL + video[i] + postSmallVideoURL + '" alt="" /></a></div>' + '<a onmouseover="ClosePreviousPlayPauseNext2(); document.getElementById(PlayButton['+i+']).src=\'./buttons/GreenPlayButton.png\';' + 'document.getElementById(\'borderForCenterTextinBox2\').style = \'border-style: solid; border-color: #000000; border-width: 3px\';' + 'document.getElementById(\'ChangeText2\').innerHTML = Explain['+i+']"' + 'onmouseout="document.getElementById(PlayButton['+i+']).src=\'./buttons/TransparentImage.png\';' + 'document.getElementById(\'borderForCenterTextinBox2\').style = \'\';' + 'document.getElementById(\'ChangeText2\').innerHTML = \'\'">' + '<img onclick = "n=1; detectTouchMouse(number['+i+']);" id="' + PlayButton[i] + '" src="./buttons/TransparentImage.png" class="rightcolumn2" alt="" border="0" /></a></div>';
 
     }
 
@@ -181,7 +120,7 @@ function myFunction2(x) {
         var text = new Array();	
     for (var i = 0; i < NumberOfVideos; i++) {
 
-    text[i] = '<div class="leftcolumn1">' + '<div class = "crop"><a><img src="' + preVideoURL2[i] + video2[i] + postSmallVideoURL2[i] + '" alt="" width="140" border="0" /></a></div>' + '<a onmouseover="ClosePreviousPlayPauseNext2(); BigFunction(2,'+x+'); document.getElementById(Play['+i+']).src=\'./buttons/GreenPlayButton2.png\';' + 'document.getElementById(\'Big\').src=\'' + preVideoURL2[i] + video2[i] + postVideoURL2[i] + '\';' + 'document.getElementById(\'ChangeText\').innerHTML = Explain2['+i+']"' + 'onmouseout="BigFunction(1,'+x+'); document.getElementById(Play['+i+']).src=\'./buttons/TransparentImage.png\';' + 'document.getElementById(\'Big\').src=\'./buttons/TransparentImage.png\';' + 'document.getElementById(\'ChangeText\').innerHTML = \'\'">' + '<img onclick = "n=1; myFunctionB(); myFunction2B(); myFunction3B(); detectTouchMouse(number2['+i+']);" class="leftcolumn2" id="' + Play[i] + '" src="./buttons/TransparentImage.png" alt="" width = "171" height = "89" border="0" /></a></div>'; 
+    text[i] = '<div class="leftcolumn1">' + '<div class = "crop"><a><img src="' + preVideoURL + video2[i] + postSmallVideoURL + '" alt="" width="140" border="0" /></a></div>' + '<a onmouseover="ClosePreviousPlayPauseNext2(); BigFunction(2,'+x+'); document.getElementById(Play['+i+']).src=\'./buttons/GreenPlayButton2.png\';' + 'document.getElementById(\'Big\').src=\'' + preVideoURL + video2[i] + postVideoURL + '\';' + 'document.getElementById(\'Big\').onerror = function() {document.getElementById(\'Big\').src=\'' + preVideoURL + video2[i] + '/hqdefault.jpg&trim=20\';};' + 'document.getElementById(\'ChangeText\').innerHTML = Explain2['+i+']"' + 'onmouseout="BigFunction(1,'+x+'); document.getElementById(Play['+i+']).src=\'./buttons/TransparentImage.png\';' + 'document.getElementById(\'Big\').src=\'./buttons/TransparentImage.png\';' + 'document.getElementById(\'ChangeText\').innerHTML = \'\'">' + '<img onclick = "n=1; myFunctionB(); myFunction2B(); myFunction3B(); detectTouchMouse(number2['+i+']);" class="leftcolumn2" id="' + Play[i] + '" src="./buttons/TransparentImage.png" alt="" width = "171" height = "89" border="0" /></a></div>'; 
 
 document.getElementById(locate[i]).innerHTML=text[i];
 
@@ -195,7 +134,7 @@ function myFunction2B() {
         var text = new Array();	
     for (var i = 0; i < NumberOfVideos; i++) {
 
-    text[i] = '<div class="leftcolumn1">' + '<div class = "crop"><a><img src="' + preVideoURL2[i] + video2[i] + postSmallVideoURL2[i] + '" alt="" width="140" border="0" /></a></div>' + '<a onmouseover="ClosePreviousPlayPauseNext2(); document.getElementById(Play['+i+']).src=\'./buttons/GreenPlayButton2.png\';' + 'document.getElementById(\'borderForCenterTextinBox2\').style = \'border-style: solid; border-color: #000000; border-width: 3px\';' + 'document.getElementById(\'ChangeText2\').innerHTML = Explain2['+i+']"' + 'onmouseout="document.getElementById(Play['+i+']).src=\'./buttons/TransparentImage.png\';' + 'document.getElementById(\'borderForCenterTextinBox2\').style = \'\';' + 'document.getElementById(\'ChangeText2\').innerHTML = \'\'">' + '<img onclick = "n=1; detectTouchMouse(number2['+i+']);" class="leftcolumn2" id="' + Play[i] + '" src="./buttons/TransparentImage.png" alt="" width = "171" height = "89" border="0" /></a></div>'; 
+    text[i] = '<div class="leftcolumn1">' + '<div class = "crop"><a><img src="' + preVideoURL + video2[i] + postSmallVideoURL + '" alt="" width="140" border="0" /></a></div>' + '<a onmouseover="ClosePreviousPlayPauseNext2(); document.getElementById(Play['+i+']).src=\'./buttons/GreenPlayButton2.png\';' + 'document.getElementById(\'borderForCenterTextinBox2\').style = \'border-style: solid; border-color: #000000; border-width: 3px\';' + 'document.getElementById(\'ChangeText2\').innerHTML = Explain2['+i+']"' + 'onmouseout="document.getElementById(Play['+i+']).src=\'./buttons/TransparentImage.png\';' + 'document.getElementById(\'borderForCenterTextinBox2\').style = \'\';' + 'document.getElementById(\'ChangeText2\').innerHTML = \'\'">' + '<img onclick = "n=1; detectTouchMouse(number2['+i+']);" class="leftcolumn2" id="' + Play[i] + '" src="./buttons/TransparentImage.png" alt="" width = "171" height = "89" border="0" /></a></div>'; 
 
 document.getElementById(locate[i]).innerHTML=text[i];
 
@@ -252,7 +191,7 @@ function PreviousPlayPauseNext() {
 }
 
 // var cursorX; var cursorY; 
-// document.onmousemove = function(e){cursorX = e.pageX; cursorY = e.pageY; document.getElementById('cursorx').innerHTML = cursorX; document.getElementById('cursorx').innerHTML = cursorY;}; 
+// document.onmousemove = function(e){cursorX = e.pageX; cursorY = e.pageY; document.getElementById('cursorx').innerHTML = cursorX; document.getElementById('cursory').innerHTML = step;};
 // function ClosePreviousPlayPauseNext() {if (cursorX < 465 || cursorX > 1163 || cursorY > 480 || cursorY < 170) {}}
 
 function ClosePreviousPlayPauseNext2() {document.getElementById('PreviousPlayPauseNext').innerHTML = ""; document.getElementById('ChangeText').innerHTML = "";}
