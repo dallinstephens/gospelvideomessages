@@ -36,11 +36,11 @@ var PlayButton = new Array();
 var Play = new Array();
 var locate = new Array();
 var number = new Array();
-for (var i = 0; i < NumberOfVideos; i++) 
-{PlayButton[i] = "PlayButton" + i;
+for (var i = 0; i < NumberOfVideos; i++) {
+PlayButton[i] = "PlayButton" + i;
 Play[i] = "Play" + i;
 locate[i] = "locate" + i;
-number[i] = i+1;};
+number[i] = i+1;}
 
 var number2 = clone(number);
 
@@ -52,8 +52,6 @@ function detectTouchMouse(iVarPassed) {
 	else {videoAppears(iVarPassed);}
 
 }
-
-var number3=[];
 
 function shuffle() {
 
@@ -87,7 +85,6 @@ function shuffle() {
             arguments[j][rnd] = tmp;
         }
     }
-    for (var t = 0; t < NumberOfVideos; t++) {number3[t] = number[t]}
 }
 
 shuffle(video, PlayButton, Explain, number);
