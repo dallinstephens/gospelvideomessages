@@ -54,7 +54,7 @@ function detectTouchMouse(iVarPassed) {
 }
 
 function shuffle() {
-    for (var i = 0; i < NumberOfVideos; i++) {var number3[i] = i+1;}
+    for (var t = 0; t < NumberOfVideos; t++) {var number3=[]; number3[t] = t+1;}
     var length0 = 0,
         length = arguments.length,
         i,
