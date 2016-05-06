@@ -38,10 +38,10 @@ for (var i = 0; i < NumberOfVideos; i++) {
 PlayButton[i] = "PlayButton" + i;
 number[i] = i+1;}
 
-for (var i = 0; i < NumberOfVideos2; i++) {
-Play[i] = "Play" + i;
-locate[i] = "locate" + i;
-number2[i] = i+1;}
+for (var s = 0; s < NumberOfVideos2; i++) {
+Play[s] = "Play" + s;
+locate[s] = "locate" + s;
+number2[s] = s+1;}
 
 var iVarPassed;
 
