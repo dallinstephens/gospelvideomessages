@@ -54,6 +54,7 @@ function detectTouchMouse(iVarPassed) {
 }
 
 function shuffle() {
+    for (var i = 0; i < NumberOfVideos; i++) {var number3[i] = i+1;}
     var length0 = 0,
         length = arguments.length,
         i,
@@ -84,9 +85,11 @@ function shuffle() {
             arguments[j][rnd] = tmp;
         }
     }
+
+    
 }
 
-shuffle(video, PlayButton, Explain, number);
+shuffle(video, PlayButton, Explain, number, number3);
 
 function myFunction2(x) {
         var text = new Array();	
