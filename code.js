@@ -88,34 +88,6 @@ function shuffle() {
 
 shuffle(video, PlayButton, Explain, number);
 
-function myFunction(x) {
-
-	var text = "";
-    for (var i = 0; i < NumberOfVideos; i++) {
-
-	text += '<div class="rightcolumn1">' + '<div class = "crop"><a><img src="' + preVideoURL + video[i] + postSmallVideoURL + '" alt="" /></a></div>' + '<a onmouseover="ClosePreviousPlayPauseNext2(); BigFunction(2,'+x+'); document.getElementById(PlayButton['+i+']).src=\'./buttons/GreenPlayButton.png\';' + 'document.getElementById(\'Big\').src=\'' + preVideoURL + video[i] + postVideoURL + '\';' + 'document.getElementById(\'Big\').onerror = function() {document.getElementById(\'Big\').src=\'' + preVideoURL + video[i] + '/hqdefault.jpg&trim=20\';};' + 'document.getElementById(\'ChangeText\').innerHTML = Explain['+i+']"' + 'onmouseout="BigFunction(1,'+x+'); document.getElementById(PlayButton['+i+']).src=\'./buttons/TransparentImage.png\';' + 'document.getElementById(\'Big\').src=\'./buttons/TransparentImage.png\';' + 'document.getElementById(\'ChangeText\').innerHTML = \'\'">' + '<img onclick = "n=1; myFunctionB(); myFunction2B(); myFunction3B(); detectTouchMouse(number['+i+']);" id="' + PlayButton[i] + '" src="./buttons/TransparentImage.png" class="rightcolumn2" alt="" border="0" /></a></div>';
-
-    }
-
-    document.getElementById("shuffle").innerHTML = text;
-
-}
-
-myFunction();
-
-function myFunctionB() {
-
-	var text = "";
-    for (var i = 0; i < NumberOfVideos; i++) {
-
-	text += '<div class="rightcolumn1">' + '<div class = "crop"><a><img src="' + preVideoURL + video[i] + postSmallVideoURL + '" alt="" /></a></div>' + '<a onmouseover="ClosePreviousPlayPauseNext2(); document.getElementById(PlayButton['+i+']).src=\'./buttons/GreenPlayButton.png\';' + 'document.getElementById(\'borderForCenterTextinBox2\').style = \'border-style: solid; border-color: #000000; border-width: 3px\';' + 'document.getElementById(\'ChangeText2\').innerHTML = Explain['+i+']"' + 'onmouseout="document.getElementById(PlayButton['+i+']).src=\'./buttons/TransparentImage.png\';' + 'document.getElementById(\'borderForCenterTextinBox2\').style = \'\';' + 'document.getElementById(\'ChangeText2\').innerHTML = \'\'">' + '<img onclick = "n=1; detectTouchMouse(number['+i+']);" id="' + PlayButton[i] + '" src="./buttons/TransparentImage.png" class="rightcolumn2" alt="" border="0" /></a></div>';
-
-    }
-
-    document.getElementById("shuffle").innerHTML = text;
-
-}
-
 function myFunction2(x) {
         var text = new Array();	
     for (var i = 0; i < NumberOfVideos; i++) {
