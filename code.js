@@ -34,13 +34,14 @@ var PlayButton = new Array();
 var Play = new Array();
 var locate = new Array();
 var number = new Array();
-for (var i = 0; i < NumberOfVideos; i++) 
-{PlayButton[i] = "PlayButton" + i;
+for (var i = 0; i < NumberOfVideos; i++) {
+PlayButton[i] = "PlayButton" + i;
+number[i] = i+1;}
+
+for (var i = 0; i < NumberOfVideos2; i++) {
 Play[i] = "Play" + i;
 locate[i] = "locate" + i;
-number[i] = i+1;};
-
-var number2 = clone(number);
+number2[i] = i+1;}
 
 var iVarPassed;
 
