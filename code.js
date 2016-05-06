@@ -28,8 +28,6 @@ if ("ontouchstart" in document.documentElement) {document.getElementById('myvid'
 
 }
 
-var Explain2 = clone(Explain);
-
 var PlayButton = new Array();
 var Play = new Array();
 var locate = new Array();
