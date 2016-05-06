@@ -21,7 +21,9 @@
 	
 </head>	
 	
-<body onload = "slideit(); BigFunction(1,0); myFunction(0); myFunction2(0); WordsOnButtonFull(); KeepImageBorderColor(); ResetAllSelectDropdownsToDefault()">	
+<body onload = "slideit(); BigFunction(1,0); myFunction(0); myFunction2(0); WordsOnButtonFull(); KeepImageBorderColor(); ResetAllSelectDropdownsToDefault()">
+	
+<button type="button" onclick="toggleMe2(ToggleOpenAll)">Click Me!</button>		
 	
 <table id="myTable" border style="border-width: 10px; border-color: #181818; border-style: solid;" border="10" rules="none" cellspacing="0" cellpadding="0" align="center">	
 	
@@ -82,7 +84,7 @@
 	
 <p id = "BigButtonLocation0" class="space"></p><!-- A Button -->	
 	
-<div id="BigToggle0" style="display:none; margin-bottom:5px;"><!-- A Toggle Start -->	
+    <div id="BigToggle0" class="ToggleOpenAll" style="display:none; margin-bottom:5px;"><!-- A Toggle Start -->	
 	
 <a id = "ButtonLocation0"><!-- Button: Atonement --><div id="para0" style="display:none;"><!-- Toggle Start --><a id = "locate0"><!-- Video: Because of Him --></a><p></p></div><!-- Toggle End --></a>	
 	
@@ -90,7 +92,7 @@
 	
 <p id = "BigButtonLocation1" class="space"></p><!-- B Button -->	
 	
-    <div id="BigToggle1" style="display:none; margin-bottom:5px;"><!-- B Toggle Start -->	
+    <div id="BigToggle1" class="ToggleOpenAll" style="display:none; margin-bottom:5px;"><!-- B Toggle Start -->	
 	
     <a class = "noButtonsCurrently">B Topics: None Currently&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><!-- Empty Content -->	
 	
@@ -98,7 +100,7 @@
 	
 <p id = "BigButtonLocation2" class="space"></p><!-- C Button -->	
 	
-    <div id="BigToggle2" style="display:none; margin-bottom:5px;"><!-- C Toggle Start -->	
+    <div id="BigToggle2" class="ToggleOpenAll" style="display:none; margin-bottom:5px;"><!-- C Toggle Start -->	
 	
 <a id = "ButtonLocation1"><!-- Button: Commandments, Keep the --><div id="para1" style="display:none;"><!-- Toggle Start --><a id = "locate1"><!-- Video: Thomas S. Monson --></a> <a id = "locate2"><!-- Video: Mary R. Durham --></a><p></p></div><!-- Toggle End --></a> <a id = "ButtonLocation2"><!-- Button: Commandments: Are the commandments restrictive or liberating? --><div id="para2" style="display:none;"><!-- Toggle Start --><a id = "locate3"><!-- Video: Thomas S. Monson --></a><p></p></div><!-- Toggle End --></a> <a id = "ButtonLocation9"><!-- Button: Challenges, Overcoming through Christ --><div id="para9" style="display:none;"><!-- Toggle Start --><a id = "locate14"><!-- Video: Henry B. Eyring --></a><p></p></div><!-- Toggle End --></a>	
 	
@@ -371,7 +373,9 @@
 	
 <script type="text/javascript">	
 function toggleMe(a){var e=document.getElementById(a); if(!e)return true; if(e.style.display=="none"){e.style.display="block"; fleXenv.updateScrollBars();}	
-else{e.style.display="none"; fleXenv.updateScrollBars();} return true;}	
+else{e.style.display="none"; fleXenv.updateScrollBars();} return true;}
+function toggleMe2(a){var e=document.getElementsByClassName(a); if(!e)return true; if(e.style.display=="none"){e.style.display="block"; fleXenv.updateScrollBars();}
+else{e.style.display="none"; fleXenv.updateScrollBars();} return true;}
 </script>	
 	
 <script>	
