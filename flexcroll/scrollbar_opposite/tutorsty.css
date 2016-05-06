@@ -38,7 +38,6 @@ h2 {
 /* Typical fixed height and fixed width example */
 width: 208px;
 height: 440px;
-resize: horizontal;
 overflow: auto;
 /* IE overflow fix, position must be relative or absolute*/
 position: relative;
