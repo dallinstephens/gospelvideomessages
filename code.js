@@ -86,7 +86,7 @@ function shuffle() {
             arguments[j][rnd] = tmp;
         }
     }
-var number3 = number;
+var number3 = number; myFunction(0);
 }
 
 shuffle(video, PlayButton, Explain, number);
