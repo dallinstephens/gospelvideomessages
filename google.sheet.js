@@ -148,7 +148,7 @@ if (q==2) {document.getElementById('ChangeText2').innerHTML = Explain3[step]; do
 if(step<(110+video3.length) || nextPrev == -1) step = Number(step) + 1;
 
 else step=0;
-            
+
 localStorage.setItem('step', step);
 
 if (nextPrev == -1) {pauseSlides();}
@@ -165,7 +165,7 @@ function myFunction(x) {
 
 var text = "";
     for (var i = 0; i < NumberOfVideos; i++) {
-if ( i==number.indexOf(1) || i==number.indexOf(5) || i==number.indexOf(10) || i==number.indexOf(16) ) { continue; }
+if ( i=='undefined' || i==number.indexOf(16) ) { continue; }
 text += '<div class="rightcolumn1">' + '<div class = "crop"><a><img src="' + preVideoURL + video[i] + postSmallVideoURL + '" alt="" /></a></div>' + '<a onmouseover="ClosePreviousPlayPauseNext2(); BigFunction(2,'+x+'); document.getElementById(PlayButton['+i+']).src=\'./buttons/GreenPlayButton.png\';' + 'document.getElementById(\'Big\').src=\'' + preVideoURL + video[i] + postVideoURL + '\';' + 'document.getElementById(\'Big\').onerror = function() {document.getElementById(\'Big\').src=\'' + preVideoURL + video[i] + '/hqdefault.jpg&trim=20\';};' + 'document.getElementById(\'ChangeText\').innerHTML = Explain['+i+']"' + 'onmouseout="BigFunction(1,'+x+'); document.getElementById(PlayButton['+i+']).src=\'./buttons/TransparentImage.png\';' + 'document.getElementById(\'Big\').src=\'./buttons/TransparentImage.png\';' + 'document.getElementById(\'ChangeText\').innerHTML = \'\'">' + '<img onclick = "n=1; myFunctionB(); myFunction2B(); myFunction3B(); detectTouchMouse(number['+i+']);" id="' + PlayButton[i] + '" src="./buttons/TransparentImage.png" class="rightcolumn2" alt="" border="0" /></a></div>';
 
     }
@@ -180,7 +180,7 @@ function myFunctionB() {
 
 var text = "";
     for (var i = 0; i < NumberOfVideos; i++) {
-if ( i==number.indexOf(1) || i==number.indexOf(5) || i==number.indexOf(10) || i==number.indexOf(16) ) { continue; }
+if ( i=='undefined' || i==number.indexOf(16) ) { continue; }
 text += '<div class="rightcolumn1">' + '<div class = "crop"><a><img src="' + preVideoURL + video[i] + postSmallVideoURL + '" alt="" /></a></div>' + '<a onmouseover="ClosePreviousPlayPauseNext2(); document.getElementById(PlayButton['+i+']).src=\'./buttons/GreenPlayButton.png\';' + 'document.getElementById(\'borderForCenterTextinBox2\').style = \'border-style: solid; border-color: #000000; border-width: 3px\';' + 'document.getElementById(\'ChangeText2\').innerHTML = Explain['+i+']"' + 'onmouseout="document.getElementById(PlayButton['+i+']).src=\'./buttons/TransparentImage.png\';' + 'document.getElementById(\'borderForCenterTextinBox2\').style = \'\';' + 'document.getElementById(\'ChangeText2\').innerHTML = \'\'">' + '<img onclick = "n=1; detectTouchMouse(number['+i+']);" id="' + PlayButton[i] + '" src="./buttons/TransparentImage.png" class="rightcolumn2" alt="" border="0" /></a></div>';
 
     }
