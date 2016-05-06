@@ -28,18 +28,21 @@ if ("ontouchstart" in document.documentElement) {document.getElementById('myvid'
 
 }
 
+var video2 = clone(video);
+
+var Explain2 = clone(Explain);
+
 var PlayButton = new Array();
 var Play = new Array();
 var locate = new Array();
 var number = new Array();
-for (var i = 0; i < NumberOfVideos; i++) {
-PlayButton[i] = "PlayButton" + i;
-number[i] = i+1;}
+for (var i = 0; i < NumberOfVideos; i++) 
+{PlayButton[i] = "PlayButton" + i;
+Play[i] = "Play" + i;
+locate[i] = "locate" + i;
+number[i] = i+1;};
 
-for (var s = 0; s < NumberOfVideos2; i++) {
-Play[s] = "Play" + s;
-locate[s] = "locate" + s;
-number2[s] = s+1;}
+var number2 = clone(number);
 
 var iVarPassed;
 
@@ -115,7 +118,7 @@ function myFunctionB() {
 
 function myFunction2(x) {
         var text = new Array();	
-    for (var i = 0; i < NumberOfVideos2; i++) {
+    for (var i = 0; i < NumberOfVideos; i++) {
 
     text[i] = '<div class="leftcolumn1">' + '<div class = "crop"><a><img src="' + preVideoURL + video2[i] + postSmallVideoURL + '" alt="" width="140" border="0" /></a></div>' + '<a onmouseover="ClosePreviousPlayPauseNext2(); BigFunction(2,'+x+'); document.getElementById(Play['+i+']).src=\'./buttons/GreenPlayButton2.png\';' + 'document.getElementById(\'Big\').src=\'' + preVideoURL + video2[i] + postVideoURL + '\';' + 'document.getElementById(\'Big\').onerror = function() {document.getElementById(\'Big\').src=\'' + preVideoURL + video2[i] + '/hqdefault.jpg&trim=20\';};' + 'document.getElementById(\'ChangeText\').innerHTML = Explain2['+i+']"' + 'onmouseout="BigFunction(1,'+x+'); document.getElementById(Play['+i+']).src=\'./buttons/TransparentImage.png\';' + 'document.getElementById(\'Big\').src=\'./buttons/TransparentImage.png\';' + 'document.getElementById(\'ChangeText\').innerHTML = \'\'">' + '<img onclick = "n=1; myFunctionB(); myFunction2B(); myFunction3B(); detectTouchMouse(number2['+i+']);" class="leftcolumn2" id="' + Play[i] + '" src="./buttons/TransparentImage.png" alt="" width = "171" height = "89" border="0" /></a></div>'; 
 
@@ -129,7 +132,7 @@ myFunction2();
 
 function myFunction2B() {
         var text = new Array();	
-    for (var i = 0; i < NumberOfVideos2; i++) {
+    for (var i = 0; i < NumberOfVideos; i++) {
 
     text[i] = '<div class="leftcolumn1">' + '<div class = "crop"><a><img src="' + preVideoURL + video2[i] + postSmallVideoURL + '" alt="" width="140" border="0" /></a></div>' + '<a onmouseover="ClosePreviousPlayPauseNext2(); document.getElementById(Play['+i+']).src=\'./buttons/GreenPlayButton2.png\';' + 'document.getElementById(\'borderForCenterTextinBox2\').style = \'border-style: solid; border-color: #000000; border-width: 3px\';' + 'document.getElementById(\'ChangeText2\').innerHTML = Explain2['+i+']"' + 'onmouseout="document.getElementById(Play['+i+']).src=\'./buttons/TransparentImage.png\';' + 'document.getElementById(\'borderForCenterTextinBox2\').style = \'\';' + 'document.getElementById(\'ChangeText2\').innerHTML = \'\'">' + '<img onclick = "n=1; detectTouchMouse(number2['+i+']);" class="leftcolumn2" id="' + Play[i] + '" src="./buttons/TransparentImage.png" alt="" width = "171" height = "89" border="0" /></a></div>'; 
 
