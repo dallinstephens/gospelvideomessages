@@ -182,7 +182,7 @@ function BigFunction(x,y) {
     if (ShowSlideBoxOrShowVideoDescription == 1 & VideoSelected == 0) {
         document.getElementById("showPlayRedGreenButton").innerHTML = '<img onmouseover = "q=2; showExplain3(); slideVideo(); ClosePreviousPlayPauseNext2()" onmouseout="q=1; closeExplain3(); SlideVideoOnOff = 2; closeslidevideo()" style = "position:absolute; top:6.5%; right:0; left:0; margin:auto; width:700px; height:312px; z-index:3;"' + 'onclick="detectTouchMouse3()"' + 'src="./buttons/TransparentImage.png" alt="" border="0" /></a>';
 
-        document.getElementById("showVideo").innerHTML = '<img onmouseover = "PreviousPlayPauseNext(); previous(); next(); pauseit(); play();" id="Big" style = "position:absolute; top:81.5%; right:0; left:0; margin:auto; width:700px; height:82px; z-index:3;"' + 'src="./buttons/TransparentImage.png" alt="" border="0" /></a>';
+        document.getElementById("showVideo").innerHTML = '<img onmouseover = "PreviousPlayPauseNext(); previous(); next(); pauseit(); play(); showExplain3();" id="Big" style = "position:absolute; top:81.5%; right:0; left:0; margin:auto; width:700px; height:82px; z-index:3;"' + 'src="./buttons/TransparentImage.png" alt="" border="0" /></a>';
 
     }
 
