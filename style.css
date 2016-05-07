@@ -16,6 +16,8 @@ a:hover {color: #00ff00;}
 /* selected link */
 a:active {color: yellow;}
 
+.button:hover {background-color: #00ff00}
+
 .noButtonsCurrently{color:white;}
 
 .ButtonSize{
