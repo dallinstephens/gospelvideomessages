@@ -159,7 +159,7 @@ function PreviousPlayPauseNext() {
 
 	document.getElementById('PreviousPlayPauseNext').innerHTML = textit;
 	
-	document.getElementById('ChangeText').innerHTML = '<div class="transparentfilmheight" onmouseout="ClosePreviousPlayPauseNext2()" onclick="detectTouchMouse2()"></div>';
+	document.getElementById('ChangeText').innerHTML = '<div class="transparentfilmheight" onmouseout="q=1; closeExplain3(); ClosePreviousPlayPauseNext2()" onclick="detectTouchMouse2()"></div>';
 
 }
 
