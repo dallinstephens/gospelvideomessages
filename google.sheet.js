@@ -101,9 +101,9 @@ var spriteSource = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAArwAAAGJAQMAAA
 
 // NOTE: If the big image does not show up when hovering over the small video image, then fix it the following below. You may need to check if maxresdefault.jpg or hqdefault works for the that image.
 
-// if (i == 4 || i == 5 || i == 6) {preVideoURL = 'http://images.weserv.nl/?url=i.ytimg.com/vi/'; postVideoURL = '/hqdefault.jpg&trim=20&w=480&h=270&t=squaredown'; postSmallVideoURL = '/mqdefault.jpg'; }
+// if (i == 4 || i == 5 || i == 6) {preVideoURL = 'http://images.weserv.nl/?url=i.ytimg.com/vi/'; postVideoURL = '/hqdefault.jpg&trim=20&w=480&h=270&t=squaredown'; postSmallVideoURL = '/mqdefault.jpg&trim=20&w=320&h=180&t=absolute'; }
 
-var preVideoURL = 'http://images.weserv.nl/?url=i.ytimg.com/vi/'; var postVideoURL = '/maxresdefault.jpg&trim=20&w=1920&h=1080&t=absolute'; var postSmallVideoURL = '/mqdefault.jpg';
+var preVideoURL = 'http://images.weserv.nl/?url=i.ytimg.com/vi/'; var postVideoURL = '/maxresdefault.jpg&trim=20&w=1920&h=1080&t=absolute'; var postSmallVideoURL = '/mqdefault.jpg&trim=20&w=320&h=180&t=absolute';
 
 var mycode; var step = 0;
 
