@@ -101,7 +101,7 @@ var spriteSource = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAArwAAAGJAQMAAA
 
 // NOTE: If the big image does not show up when hovering over the small video image, then fix it the following below. You may need to check if maxresdefault.jpg or hqdefault works for the that image.
 
-// if (i == 4 || i == 5 || i == 6) {preVideoURL = 'http://images.weserv.nl/?url=i.ytimg.com/vi/'; postVideoURL = '/hqdefault.jpg&trim=20'; postSmallVideoURL = '/mqdefault.jpg'; }
+// if (i == 4 || i == 5 || i == 6) {preVideoURL = 'http://images.weserv.nl/?url=i.ytimg.com/vi/'; postVideoURL = '/hqdefault.jpg&trim=20&w=480&h=270&t=squaredown'; postSmallVideoURL = '/mqdefault.jpg'; }
 
 var preVideoURL = 'http://images.weserv.nl/?url=i.ytimg.com/vi/'; var postVideoURL = '/maxresdefault.jpg'; var postSmallVideoURL = '/mqdefault.jpg';
 
@@ -139,7 +139,7 @@ if(step<111) {mycode = "<img class='" + set + JesusImageNumber[step] + "' src = 
 
 else if ( step=='undefined'  || step==114 ) {g = step - 111; mycode = "<img style='position: relative; top:28px; width:700px; height:393px' src='" + alternativePicture[g] + "' border='0' />";}
 
-else {w = step - 111; mycode = "<img style='position: relative; top:28px; width:700px; height:393px' src='" + preVideoURL + video3[w] + postVideoURL + "' onerror=\"this.src='" + preVideoURL + video3[w] + "/hqdefault.jpg&trim=20'\" border='0' />";}
+else {w = step - 111; mycode = "<img style='position: relative; top:28px; width:700px; height:393px' src='" + preVideoURL + video3[w] + postVideoURL + "' onerror=\"this.src='" + preVideoURL + video3[w] + "/hqdefault.jpg&trim=20&w=480&h=270&t=squaredown'\" border='0' />";}
 
 document.getElementById("demo").innerHTML = mycode; KeepImageBorderColor();
 
@@ -166,7 +166,7 @@ function myFunction(x) {
 var text = "";
     for (var i = 0; i < NumberOfVideos; i++) {
 if ( i=='undefined' || i==number.indexOf(3) || i==number.indexOf(4) || i==number.indexOf(6) || i==number.indexOf(7) || i==number.indexOf(8) || i==number.indexOf(13) || i==number.indexOf(16) || i==number.indexOf(17) || i==number.indexOf(18) || i==number.indexOf(19) || i==number.indexOf(22) || i==number.indexOf(24) || i==number.indexOf(25) || i==number.indexOf(28) || i==number.indexOf(29) || i==number.indexOf(32) || i==number.indexOf(35) ) { continue; }
-text += '<div class="rightcolumn1">' + '<div class = "crop"><a><img src="' + preVideoURL + video[i] + postSmallVideoURL + '" alt="" /></a></div>' + '<a onmouseover="ClosePreviousPlayPauseNext2(); BigFunction(2,'+x+'); document.getElementById(PlayButton['+i+']).src=\'./buttons/GreenPlayButton.png\';' + 'document.getElementById(\'Big\').src=\'' + preVideoURL + video[i] + postVideoURL + '\';' + 'document.getElementById(\'Big\').onerror = function() {document.getElementById(\'Big\').src=\'' + preVideoURL + video[i] + '/hqdefault.jpg&trim=20\';};' + 'document.getElementById(\'ChangeText\').innerHTML = Explain['+i+']"' + 'onmouseout="BigFunction(1,'+x+'); document.getElementById(PlayButton['+i+']).src=\'./buttons/TransparentImage.png\';' + 'document.getElementById(\'Big\').src=\'./buttons/TransparentImage.png\';' + 'document.getElementById(\'ChangeText\').innerHTML = \'\'">' + '<img onclick = "n=1; myFunctionB(); myFunction2B(); myFunction3B(); detectTouchMouse(number['+i+']);" id="' + PlayButton[i] + '" src="./buttons/TransparentImage.png" class="rightcolumn2" alt="" border="0" /></a></div>';
+text += '<div class="rightcolumn1">' + '<div class = "crop"><a><img src="' + preVideoURL + video[i] + postSmallVideoURL + '" alt="" /></a></div>' + '<a onmouseover="ClosePreviousPlayPauseNext2(); BigFunction(2,'+x+'); document.getElementById(PlayButton['+i+']).src=\'./buttons/GreenPlayButton.png\';' + 'document.getElementById(\'Big\').src=\'' + preVideoURL + video[i] + postVideoURL + '\';' + 'document.getElementById(\'Big\').onerror = function() {document.getElementById(\'Big\').src=\'' + preVideoURL + video[i] + '/hqdefault.jpg&trim=20&w=480&h=270&t=squaredown\';};' + 'document.getElementById(\'ChangeText\').innerHTML = Explain['+i+']"' + 'onmouseout="BigFunction(1,'+x+'); document.getElementById(PlayButton['+i+']).src=\'./buttons/TransparentImage.png\';' + 'document.getElementById(\'Big\').src=\'./buttons/TransparentImage.png\';' + 'document.getElementById(\'ChangeText\').innerHTML = \'\'">' + '<img onclick = "n=1; myFunctionB(); myFunction2B(); myFunction3B(); detectTouchMouse(number['+i+']);" id="' + PlayButton[i] + '" src="./buttons/TransparentImage.png" class="rightcolumn2" alt="" border="0" /></a></div>';
 
     }
 
