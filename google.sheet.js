@@ -83,7 +83,7 @@ mnthYr = [ "May 2014" , "October 2012" , "March 2012" , "January 2012" , "Januar
 
 i = z - 1;
  
-var vid2 = 'https://www.youtube.com/embed/' + multivid + '?enablejsapi=1&version=3&playerapiid=ytplayer&autoplay=1&vq=720p&rel=0&start=' + StartTimeMult + '&end=' + EndTimeMult; var posterURL = 'http://images.weserv.nl/?url=i.ytimg.com/vi/CVWJBM_gwGg/maxresdefault.jpg&trim=20&w=1920&h=1080&t=absolute';
+var vid2 = 'https://www.youtube.com/embed/' + multivid + '?enablejsapi=1&version=3&playerapiid=ytplayer&autoplay=1&vq=720p&rel=0&start=' + StartTimeMult + '&end=' + EndTimeMult; var posterURL = 'http://images.weserv.nl/?url=i.ytimg.com/vi/CVWJBM_gwGg/maxresdefault.jpg&trim=1';
       
 mycode = '<iframe id="myvid" style = "position: relative; z-index:4; top:28px;" width="700" height="393" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen allowfullscreen="true" allowscriptaccess="always" quality="high" bgcolor="#000000" name="my-video" style=""' + 'src= "' + vid2 + '"' + 'type="application/x-shockwave-flash"></iframe>' + '<a style = "position: absolute; z-index:10; top:428px; left:0px; right:0px; text-align:center; text-decoration: none" href="' + srcUrl[i] + '" target="_blank"><font id = "talkLink2" size="2">' + athr[i] + ', &quot;' + srcName[i] + ',&quot; ' + srce[i] + ', ' + mnthYr[i] + '</font></a>';
 
@@ -101,9 +101,9 @@ var spriteSource = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAArwAAAGJAQMAAA
 
 // NOTE: If the big image does not show up when hovering over the small video image, then fix it the following below. You may need to check if maxresdefault.jpg or hqdefault works for the that image.
 
-// if (i == 4 || i == 5 || i == 6) {preVideoURL = 'http://images.weserv.nl/?url=i.ytimg.com/vi/'; postVideoURL = '/hqdefault.jpg&trim=20&w=480&h=270&t=squaredown'; postSmallVideoURL = '/mqdefault.jpg&trim=20&w=320&h=180&t=absolute'; }
+// if (i == 4 || i == 5 || i == 6) {preVideoURL = 'http://images.weserv.nl/?url=i.ytimg.com/vi/'; postVideoURL = '/hqdefault.jpg&trim=1&w=480&h=270&t=squaredown'; postSmallVideoURL = '/mqdefault.jpg&trim=1'; }
 
-var preVideoURL = 'http://images.weserv.nl/?url=i.ytimg.com/vi/'; var postVideoURL = '/maxresdefault.jpg&trim=20&w=1920&h=1080&t=absolute'; var postSmallVideoURL = '/mqdefault.jpg&trim=20&w=320&h=180&t=absolute';
+var preVideoURL = 'http://images.weserv.nl/?url=i.ytimg.com/vi/'; var postVideoURL = '/maxresdefault.jpg&trim=1'; var postSmallVideoURL = '/mqdefault.jpg&trim=1';
 
 var mycode; var step = 0;
 
