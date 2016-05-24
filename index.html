@@ -387,7 +387,7 @@ document.getElementById("TitleWillDisappear").style.opacity="0";
 document.getElementById("TitleWillDisappear").onmouseover = function() {this.style.color=storage.titleColor; this.style.opacity="1"}
 document.getElementById("TitleWillDisappear").onmouseout = function() {this.style.opacity="0"}
 document.getElementById("colorpalette").innerHTML = '<div style = "position:relative"><a onmouseover="document.getElementById(\'colorbutton\').src=\'./buttons/color.in.png\'"' + 'onmouseout="document.getElementById(\'colorbutton\').src=' + '\'./buttons/TransparentImage.png\'">' + '<img id="colorbutton" style = "position:absolute; top:15px; right:104px;" onclick="show(\'EntireColorBox\'); PresetColors(); CloseOrOpenSlideShow()" height = "50px"' + 'src="./buttons/TransparentImage.png" alt="" border="0" /></div></a>';
-}, 10000);
+}, 300000);
 </script>
 
 <script>
